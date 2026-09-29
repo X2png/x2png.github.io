@@ -136,8 +136,10 @@
           <i class="fa-brands fa-x-twitter text-xl"></i>
         </div>
         <div>
-          <h1 id="ui-app-title" class="font-bold text-lg leading-tight bg-gradient-to-r from-slate-900 via-slate-700 to-slate-500 dark:from-white dark:via-slate-200 dark:to-slate-400 bg-clip-text text-transparent">
-            مولد صور التغريدات
+          <h1 class="font-bold text-lg leading-tight bg-gradient-to-r from-slate-900 via-slate-700 to-slate-500 dark:from-white dark:via-slate-200 dark:to-slate-400 bg-clip-text text-transparent">
+            <a id="ui-app-title" href="https://x2png.github.io" target="_self" class="hover:opacity-80 transition-opacity">
+              مولد صور التغريدات
+            </a>
           </h1>
           <p id="ui-app-subtitle" class="text-xs text-slate-500 dark:text-slate-400">تحويل تغريدات X إلى صور احترافية عالية الدقة</p>
         </div>
@@ -672,7 +674,7 @@
         siteThemeLight: 'داكن',
         langToggle: 'English',
         manualBtn: 'إنشاء تغريدة',
-        sampleBtn: 'تغريدة تجريبية',
+        sampleBtn: 'الصفحة الرئيسية',
         inputLabel: 'رابط التغريدة من x.com',
         pasteBtn: 'لصق',
         pasteBtnTitle: 'لصق الرابط المنسوخ من الكيبورد',
@@ -755,7 +757,7 @@
         siteThemeLight: 'Dark',
         langToggle: 'عربي',
         manualBtn: 'Manual Create',
-        sampleBtn: 'Sample Tweet',
+        sampleBtn: 'Home Page',
         inputLabel: 'Tweet URL from x.com',
         pasteBtn: 'Paste',
         pasteBtnTitle: 'Paste copied URL from clipboard',
@@ -923,7 +925,6 @@
 
       document.getElementById('export-btn-text').innerText = dict.exportBtnText;
       document.getElementById('ui-export-hint').innerHTML = `<i class="fa-solid fa-shield-halved text-emerald-500 dark:text-emerald-400 ${isAr ? 'ml-1' : 'mr-1'}"></i>${dict.exportHint}`;
-      document.getElementById('ui-copy-btn').innerText = dict.copyBtn;
 
       // Modal labels
       document.getElementById('ui-modal-title').innerHTML = `<i class="fa-solid fa-sliders text-sky-500 dark:text-sky-400"></i>${dict.modalTitle}`;
@@ -1574,3 +1575,5 @@
   </script>
 </body>
 </html>
+```eof
+
